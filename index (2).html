@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shagufta Parveen — Skills That Pay For Life</title>
+
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1305937854997417');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1305937854997417&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --gold:       #c9a84c;
+      --gold-light: #e8c97a;
+      --gold-dim:   rgba(201,168,76,0.15);
+      --dark:       #0a0a0a;
+      --dark2:      #111111;
+      --dark3:      #1a1a1a;
+      --dark4:      #222222;
+      --text:       #e8e0d0;
+      --text-muted: #9a9080;
+      --white:      #fff;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--dark);
+      color: var(--text);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: '';
+      position: fixed; inset: 0;
+      background:
+        radial-gradient(ellipse at 10% 20%, rgba(201,168,76,0.06) 0%, transparent 50%),
+        radial-gradient(ellipse at 90% 80%, rgba(201,168,76,0.04) 0%, transparent 50%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* ─── PRIVACY MODAL ─── */
+    .modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.85); z-index: 1000; display: flex; align-items: center; justify-content: center; padding: 20px; backdrop-filter: blur(6px); }
+    .modal-overlay.hidden { display: none; }
+    .modal-box { background: var(--dark3); border: 1px solid var(--gold); border-radius: 16px; padding: 40px 32px; max-width: 480px; width: 100%; position: relative; }
+    .modal-box h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; color: var(--gold); margin-bottom: 12px; }
+    .modal-box p { color: var(--text-muted); font-size: 0.9rem; margin-bottom: 14px; }
+    .modal-close { position: absolute; top: 16px; right: 20px; background: none; border: none; color: var(--text-muted); font-size: 1.4rem; cursor: pointer; }
+
+    /* ─── LEAD MODAL ─── */
+    .lead-modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.9); z-index: 900; display: flex; align-items: center; justify-content: center; padding: 20px; backdrop-filter: blur(8px); }
+    .lead-modal-overlay.hidden { display: none; }
+    .lead-modal-box { background: var(--dark3); border: 1px solid var(--gold); border-radius: 20px; padding: 40px 32px; max-width: 460px; width: 100%; position: relative; box-shadow: 0 20px 60px rgba(201,168,76,0.15); }
+    .lead-modal-box h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; color: var(--gold); margin-bottom: 6px; }
+    .lead-modal-box > p { color: var(--text-muted); font-size: 0.85rem; margin-bottom: 24px; }
+    .lead-modal-close { position: absolute; top: 16px; right: 20px; background: none; border: none; color: var(--text-muted); font-size: 1.4rem; cursor: pointer; }
+    .form-group { margin-bottom: 14px; }
+    .form-group label { display: block; font-size: 0.78rem; color: var(--gold); margin-bottom: 5px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.06em; }
+    .form-group input, .form-group select { width: 100%; background: var(--dark4); border: 1px solid #333; border-radius: 10px; padding: 12px 16px; color: var(--text); font-family: 'DM Sans', sans-serif; font-size: 0.95rem; outline: none; transition: border-color 0.2s; }
+    .form-group input:focus, .form-group select:focus { border-color: var(--gold); }
+    .form-group select option { background: var(--dark3); }
+    .btn-wa-submit { width: 100%; background: linear-gradient(135deg, #25d366, #128c7e); color: #fff; border: none; border-radius: 12px; padding: 14px; font-size: 1rem; font-weight: 600; cursor: pointer; margin-top: 8px; display: flex; align-items: center; justify-content: center; gap: 8px; transition: opacity 0.2s; }
+    .btn-wa-submit:hover { opacity: 0.9; }
+
+    /* ─── BUTTONS ─── */
+    .btn-primary { display: inline-flex; align-items: center; gap: 10px; background: linear-gradient(135deg, var(--gold), var(--gold-light)); color: #0a0a0a; font-weight: 700; font-size: 1rem; padding: 14px 32px; border-radius: 50px; border: none; cursor: pointer; transition: transform 0.2s, box-shadow 0.2s; box-shadow: 0 4px 24px rgba(201,168,76,0.3); font-family: 'DM Sans', sans-serif; }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 32px rgba(201,168,76,0.5); }
+    .btn-outline { display: inline-flex; align-items: center; gap: 10px; background: transparent; color: var(--gold); font-weight: 600; font-size: 1rem; padding: 13px 32px; border-radius: 50px; border: 1px solid var(--gold); cursor: pointer; transition: all 0.2s; font-family: 'DM Sans', sans-serif; }
+    .btn-outline:hover { background: var(--gold-dim); transform: translateY(-2px); }
+
+    /* ─── HERO ─── */
+    header { text-align: center; padding: 70px 20px 40px; position: relative; z-index: 1; }
+    .header-tag { display: inline-block; background: var(--gold-dim); border: 1px solid var(--gold); color: var(--gold); border-radius: 50px; padding: 6px 20px; font-size: 0.8rem; letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 28px; }
+    header h1 { font-family: 'Cormorant Garamond', serif; font-size: clamp(2.8rem, 8vw, 5.5rem); font-weight: 700; line-height: 1.1; color: var(--white); margin-bottom: 20px; }
+    header h1 em { font-style: italic; color: var(--gold); }
+    header p.tagline { font-size: clamp(1rem, 2.5vw, 1.2rem); color: var(--text-muted); max-width: 520px; margin: 0 auto 36px; }
+
+    /* ─── SECTION ─── */
+    .section { padding: 70px 20px; position: relative; z-index: 1; }
+    .container { max-width: 900px; margin: 0 auto; }
+    .section-label { font-size: 0.75rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 10px; }
+    .section-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(2rem, 5vw, 3rem); font-weight: 700; line-height: 1.2; color: var(--white); margin-bottom: 18px; }
+    .section-title em { font-style: italic; color: var(--gold); }
+
+    /* ─── MENTOR ─── */
+    .mentor-card { background: var(--dark2); border: 1px solid #222; border-radius: 24px; padding: 48px 40px; display: grid; grid-template-columns: 200px 1fr; gap: 40px; align-items: center; margin-top: 28px; box-shadow: 0 8px 40px rgba(0,0,0,0.3); }
+    @media(max-width:680px) { .mentor-card { grid-template-columns: 1fr; text-align: center; padding: 30px 20px; } }
+    .mentor-img { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 16px; border: 2px solid var(--gold); }
+    .mentor-roles { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    @media(max-width:680px) { .mentor-roles { justify-content: center; } }
+    .mentor-role-tag { background: var(--gold-dim); border: 1px solid var(--gold); color: var(--gold); border-radius: 50px; padding: 4px 14px; font-size: 0.75rem; letter-spacing: 0.04em; }
+    .mentor-bio { color: var(--text-muted); margin: 12px 0; }
+    .mentor-quote { border-left: 3px solid var(--gold); padding-left: 16px; font-family: 'Cormorant Garamond', serif; font-size: 1.15rem; font-style: italic; color: var(--text); margin: 16px 0; }
+    @media(max-width:680px) { .mentor-quote { border-left: none; border-top: 3px solid var(--gold); padding-left: 0; padding-top: 12px; } }
+    .mentor-stats { display: flex; gap: 28px; flex-wrap: wrap; margin-top: 14px; }
+    @media(max-width:680px) { .mentor-stats { justify-content: center; } }
+    .mentor-stat-num { font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; font-weight: 700; color: var(--gold); display: block; }
+    .mentor-stat-label { font-size: 0.75rem; color: var(--text-muted); }
+
+    /* ─── STATS BAR ─── */
+    .stats-bar { display: flex; justify-content: center; flex-wrap: wrap; background: var(--dark2); border-top: 1px solid #222; border-bottom: 1px solid #222; padding: 32px 20px; position: relative; z-index: 1; }
+    .stat-item { flex: 1 1 140px; text-align: center; padding: 16px 24px; border-right: 1px solid #2a2a2a; }
+    .stat-item:last-child { border-right: none; }
+    .stat-num { font-family: 'Cormorant Garamond', serif; font-size: 2.4rem; font-weight: 700; color: var(--gold); display: block; line-height: 1; }
+    .stat-label { font-size: 0.78rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.08em; margin-top: 6px; }
+
+    /* ─── CAROUSEL ─── */
+    .carousel-wrapper { position: relative; overflow: hidden; border-radius: 20px; margin-top: 36px; border: 1px solid #2a2a2a; }
+    .carousel-track { display: flex; transition: transform 0.45s cubic-bezier(0.4,0,0.2,1); }
+    .carousel-slide { min-width: 100%; }
+    .carousel-slide img { width: 100%; border-radius: 20px; display: block; max-height: 520px; object-fit: contain; background: var(--dark2); }
+    .carousel-btn { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(10,10,10,0.8); border: 1px solid var(--gold); color: var(--gold); width: 44px; height: 44px; border-radius: 50%; font-size: 1.1rem; cursor: pointer; display: flex; align-items: center; justify-content: center; z-index: 10; transition: all 0.2s; }
+    .carousel-btn:hover { background: var(--gold); color: #000; }
+    .carousel-btn.prev { left: 12px; }
+    .carousel-btn.next { right: 12px; }
+    .carousel-dots { display: flex; justify-content: center; gap: 8px; margin-top: 14px; }
+    .carousel-dot { width: 8px; height: 8px; border-radius: 50%; background: #333; cursor: pointer; transition: background 0.2s; }
+    .carousel-dot.active { background: var(--gold); }
+
+    /* ─── BENEFITS ─── */
+    .benefits-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 18px; margin-top: 36px; }
+    .benefit-card { background: var(--dark2); border: 1px solid #222; border-radius: 18px; padding: 28px 22px; transition: all 0.2s; }
+    .benefit-card:hover { border-color: var(--gold); transform: translateY(-4px); }
+    .benefit-num { font-family: 'Cormorant Garamond', serif; font-size: 2.5rem; font-weight: 700; color: var(--gold); opacity: 0.35; line-height: 1; margin-bottom: 10px; }
+    .benefit-title { font-weight: 600; color: var(--white); margin-bottom: 8px; }
+    .benefit-desc { font-size: 0.88rem; color: var(--text-muted); }
+
+    /* ─── TRACK RECORD ─── */
+    .track-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 18px; margin-top: 36px; }
+    .track-card { background: var(--dark2); border: 1px solid #222; border-radius: 18px; padding: 30px 18px; text-align: center; }
+    .track-icon { font-size: 1.8rem; margin-bottom: 10px; }
+    .track-num { font-family: 'Cormorant Garamond', serif; font-size: 2.4rem; font-weight: 700; color: var(--gold); }
+    .track-label { font-size: 0.78rem; color: var(--text-muted); margin-top: 4px; }
+
+    /* ─── FAQ ─── */
+    .faq-list { margin-top: 36px; }
+    .faq-item { border-bottom: 1px solid #1e1e1e; }
+    .faq-question { width: 100%; text-align: left; background: none; border: none; color: var(--text); font-family: 'DM Sans', sans-serif; font-size: 1rem; font-weight: 500; padding: 18px 0; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 16px; transition: color 0.2s; }
+    .faq-question:hover { color: var(--gold); }
+    .faq-icon { font-size: 1.4rem; color: var(--gold); flex-shrink: 0; transition: transform 0.3s; }
+    .faq-item.open .faq-icon { transform: rotate(45deg); }
+    .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.35s ease, padding 0.35s ease; color: var(--text-muted); font-size: 0.95rem; line-height: 1.7; }
+    .faq-item.open .faq-answer { max-height: 200px; padding-bottom: 18px; }
+
+    /* ─── CTA ─── */
+    .cta-section { background: var(--dark2); border-top: 1px solid #1e1e1e; border-bottom: 1px solid #1e1e1e; text-align: center; padding: 80px 20px; position: relative; z-index: 1; }
+    .cta-section h2 { font-family: 'Cormorant Garamond', serif; font-size: clamp(2rem, 5vw, 3.2rem); font-weight: 700; color: var(--white); margin-bottom: 12px; }
+    .cta-section h2 em { font-style: italic; color: var(--gold); }
+    .cta-section > .container > p { color: var(--text-muted); margin-bottom: 40px; }
+    .cta-box { background: var(--dark3); border: 1px solid #2a2a2a; border-radius: 16px; padding: 28px 24px; max-width: 480px; margin: 0 auto 32px; text-align: left; }
+    .cta-box p { color: var(--text); margin-bottom: 6px; }
+    .cta-box strong { color: var(--gold); }
+    .cta-number { display: flex; align-items: center; gap: 12px; background: var(--dark4); border: 1px solid #333; border-radius: 12px; padding: 14px 20px; margin: 14px 0; font-size: 1.1rem; font-weight: 600; color: var(--white); }
+    .cta-checklist { list-style: none; text-align: left; max-width: 380px; margin: 24px auto 0; }
+    .cta-checklist li { display: flex; gap: 10px; color: var(--text-muted); font-size: 0.9rem; margin-bottom: 10px; }
+    .cta-check { color: var(--gold); flex-shrink: 0; }
+
+    /* ─── INSTAGRAM SECTION ─── */
+    .insta-section { text-align: center; padding: 60px 20px; position: relative; z-index: 1; }
+    .insta-btn {
+      display: inline-flex; align-items: center; gap: 12px;
+      background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+      color: #fff; font-weight: 700; font-size: 1rem;
+      padding: 14px 36px; border-radius: 50px; border: none; cursor: pointer;
+      text-decoration: none; transition: transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 6px 24px rgba(253,29,29,0.3); font-family: 'DM Sans', sans-serif;
+    }
+    .insta-btn:hover { transform: translateY(-2px); box-shadow: 0 10px 32px rgba(253,29,29,0.5); }
+    .insta-btn svg { width: 22px; height: 22px; fill: #fff; }
+
+    /* ─── FOOTER ─── */
+    footer { text-align: center; padding: 40px 20px; color: var(--text-muted); font-size: 0.8rem; position: relative; z-index: 1; border-top: 1px solid #111; }
+    footer a { color: var(--gold); text-decoration: none; }
+
+    /* ─── SCROLL ANIM ─── */
+    .fade-in { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .fade-in.visible { opacity: 1; transform: none; }
+
+    /* ─── WA FLOAT ─── */
+    .wa-float { position: fixed; bottom: 24px; right: 24px; width: 56px; height: 56px; background: linear-gradient(135deg, #25d366, #128c7e); border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 20px rgba(37,211,102,0.4); z-index: 200; cursor: pointer; text-decoration: none; transition: transform 0.2s; }
+    .wa-float:hover { transform: scale(1.1); }
+    .wa-float svg { width: 28px; height: 28px; fill: #fff; }
+  </style>
+</head>
+<body>
+
+  <!-- PRIVACY MODAL -->
+  <div class="modal-overlay hidden" id="privacyModal">
+    <div class="modal-box">
+      <button class="modal-close" onclick="document.getElementById('privacyModal').classList.add('hidden')">×</button>
+      <h3>Privacy Policy</h3>
+      <h3 style="font-size:1rem;color:var(--text);margin:10px 0 5px">Information We Collect</h3>
+      <p>We collect your name, phone number, and details you share through WhatsApp or our contact form.</p>
+      <h3 style="font-size:1rem;color:var(--text);margin:10px 0 5px">How We Use It</h3>
+      <p>Used only to communicate about our training programs and provide support.</p>
+      <h3 style="font-size:1rem;color:var(--text);margin:10px 0 5px">Data Protection</h3>
+      <p>Your data is never sold or shared for marketing purposes.</p>
+      <h3 style="font-size:1rem;color:var(--text);margin:10px 0 5px">Your Rights</h3>
+      <p>You may access, correct, or delete your information at any time.</p>
+      <p style="margin-top:12px;font-size:0.78rem;color:#555">By using our services, you agree to this policy. Last updated: 2025</p>
+    </div>
+  </div>
+
+  <!-- LEAD FORM MODAL -->
+  <div class="lead-modal-overlay hidden" id="leadModal">
+    <div class="lead-modal-box">
+      <button class="lead-modal-close" onclick="document.getElementById('leadModal').classList.add('hidden')">×</button>
+      <h3>Let's Begin</h3>
+      <p>Shagufta will reach out within 24 hrs</p>
+      <div class="form-group"><label>Full Name *</label><input type="text" id="f-name" placeholder="Your full name" /></div>
+      <div class="form-group"><label>Phone *</label><input type="tel" id="f-phone" placeholder="Your WhatsApp number" /></div>
+      <div class="form-group"><label>Age *</label><input type="number" id="f-age" placeholder="Your age" min="10" max="80" /></div>
+      <div class="form-group">
+        <label>Gender *</label>
+        <select id="f-gender"><option value="">Select</option><option>Female</option><option>Male</option><option>Other</option></select>
+      </div>
+      <div class="form-group">
+        <label>Profession *</label>
+        <select id="f-profession"><option value="">Select</option><option>Student</option><option>Housewife</option><option>Working Professional</option><option>Other</option></select>
+      </div>
+      <button class="btn-wa-submit" onclick="submitToWhatsApp()">📲 Send to WhatsApp</button>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <header>
+    <div class="header-tag">Digital Skills Coach</div>
+    <h1>Skills That<br/><em>Pay For Life</em></h1>
+    <p class="tagline">Stop dreaming about financial freedom — start building it. Real skills, real income, real results.</p>
+    <button class="btn-primary" onclick="openForm()">📲 Begin Your Journey</button>
+  </header>
+
+  <!-- MENTOR — right below hero -->
+  <section class="section" style="padding-top:10px;">
+    <div class="container fade-in">
+      <div class="section-label">Your Mentor</div>
+      <h2 class="section-title">Hi, I'm <em>Shagufta Parveen</em></h2>
+      <div class="mentor-card">
+        <div>
+          <img class="mentor-img" src="https://d1yei2z3i6k35z.cloudfront.net/1084678/6a06c482820220.85746196_WhatsAppImage2026-05-15at12.26.54PM.jpeg" alt="Shagufta Parveen" loading="lazy" />
+        </div>
+        <div>
+          <div class="mentor-roles">
+            <span class="mentor-role-tag">Skills Coach</span>
+            <span class="mentor-role-tag">Entrepreneur</span>
+            <span class="mentor-role-tag">Freelancer</span>
+          </div>
+          <p class="mentor-bio">I started with zero knowledge, but learning digital skills changed my journey. Now I help beginners learn, grow, and start building their own online future.</p>
+          <div class="mentor-quote">"The right skill at the right time can completely transform your life."</div>
+          <div class="mentor-stats">
+            <div><span class="mentor-stat-num">2000+</span><span class="mentor-stat-label">Students</span></div>
+            <div><span class="mentor-stat-num">₹50K+</span><span class="mentor-stat-label">Monthly Income</span></div>
+            <div><span class="mentor-stat-num">3+</span><span class="mentor-stat-label">Years</span></div>
+          </div>
+          <div style="margin-top:22px;">
+            <button class="btn-primary" onclick="openForm()">📲 Connect on WhatsApp</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS BAR -->
+  <div class="stats-bar">
+    <div class="stat-item"><span class="stat-num" data-target="2000" data-suffix="+">0+</span><span class="stat-label">Students Trained</span></div>
+    <div class="stat-item"><span class="stat-num" data-target="50" data-prefix="₹" data-suffix="K+">₹0K+</span><span class="stat-label">Monthly Income Possible</span></div>
+    <div class="stat-item"><span class="stat-num" data-target="3" data-suffix="+">0+</span><span class="stat-label">Years of Mentoring</span></div>
+  </div>
+
+  <!-- TESTIMONIALS -->
+  <section class="section">
+    <div class="container fade-in">
+      <div class="section-label">Proof</div>
+      <h2 class="section-title">Real People, <em>Real Results</em></h2>
+      <p style="color:var(--text-muted);">Every screenshot is a real student. Every result is earned.</p>
+      <div class="carousel-wrapper">
+        <div class="carousel-track" id="carouselTrack">
+          <div class="carousel-slide"><img src="https://d1yei2z3i6k35z.cloudfront.net/1084678/6a06c4a5cfd2a9.63511694_WhatsAppImage2026-05-15at12.22.52PM.jpeg" alt="Result 1" loading="lazy"/></div>
+          <div class="carousel-slide"><img src="https://d1yei2z3i6k35z.cloudfront.net/1084678/6a06c4c914f866.47955280_WhatsAppImage2026-05-15at12.22.53PM.jpeg" alt="Result 2" loading="lazy"/></div>
+          <div class="carousel-slide"><img src="https://d1yei2z3i6k35z.cloudfront.net/1084678/6a06c4ee913826.13306722_WhatsAppImage2026-05-15at12.22.53PM1.jpeg" alt="Result 3" loading="lazy"/></div>
+          <div class="carousel-slide"><img src="https://d1yei2z3i6k35z.cloudfront.net/1084678/6a06c514812288.61475993_WhatsAppImage2026-05-15at12.18.37PM.jpeg" alt="Result 4" loading="lazy"/></div>
+          <div class="carousel-slide"><img src="https://d1yei2z3i6k35z.cloudfront.net/1084678/6a06c535d05ba3.64307233_WhatsAppImage2026-05-15at12.19.57PM.jpeg" alt="Result 5" loading="lazy"/></div>
+        </div>
+        <button class="carousel-btn prev" onclick="moveCarousel(-1)">&#8592;</button>
+        <button class="carousel-btn next" onclick="moveCarousel(1)">&#8594;</button>
+      </div>
+      <div class="carousel-dots" id="carouselDots"></div>
+    </div>
+  </section>
+
+  <!-- WHAT YOU GET -->
+  <section class="section" style="background:var(--dark2);border-top:1px solid #1a1a1a;border-bottom:1px solid #1a1a1a;">
+    <div class="container fade-in">
+      <div class="section-label">What You Get</div>
+      <h2 class="section-title">Everything You Need <em>To Start Earning</em></h2>
+      <div class="benefits-grid">
+        <div class="benefit-card"><div class="benefit-num">01</div><div class="benefit-title">Personal Mentorship</div><div class="benefit-desc">Direct WhatsApp access to your coach. Real guidance whenever you need it.</div></div>
+        <div class="benefit-card"><div class="benefit-num">02</div><div class="benefit-title">Proven Training System</div><div class="benefit-desc">A complete blueprint — from zero knowledge to consistent income.</div></div>
+        <div class="benefit-card"><div class="benefit-num">03</div><div class="benefit-title">Live Community</div><div class="benefit-desc">Hundreds of active earners. Daily wins, support, and unstoppable momentum.</div></div>
+        <div class="benefit-card"><div class="benefit-num">04</div><div class="benefit-title">Income in Weeks</div><div class="benefit-desc">Not months. Most students see their first income within 30 days.</div></div>
+      </div>
+      <div style="text-align:center;margin-top:36px;">
+        <button class="btn-primary" onclick="openForm()">📲 Get Started Now</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRACK RECORD -->
+  <section class="section">
+    <div class="container fade-in">
+      <div class="section-label">Numbers</div>
+      <h2 class="section-title">The Track <em>Record</em></h2>
+      <div class="track-grid">
+        <div class="track-card"><div class="track-icon">⭐</div><div class="track-num">3+</div><div class="track-label">Years of Experience</div></div>
+        <div class="track-card"><div class="track-icon">🚀</div><div class="track-num">2000+</div><div class="track-label">Entrepreneurs Created</div></div>
+        <div class="track-card"><div class="track-icon">💰</div><div class="track-num">₹50K+</div><div class="track-label">Earned by Students</div></div>
+        <div class="track-card"><div class="track-icon">👑</div><div class="track-num">500+</div><div class="track-label">Earning ₹50K+</div></div>
+      </div>
+      <div style="text-align:center;margin-top:36px;">
+        <button class="btn-outline" onclick="openForm()">✨ Your Turn Now</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" style="background:var(--dark2);border-top:1px solid #1a1a1a;border-bottom:1px solid #1a1a1a;">
+    <div class="container fade-in">
+      <div class="section-label">FAQ</div>
+      <h2 class="section-title">Questions <em>Answered</em></h2>
+      <div class="faq-list">
+        <div class="faq-item"><button class="faq-question">What skills will I learn? <span class="faq-icon">+</span></button><div class="faq-answer">Content Creation, Graphic Design, Video Editing, Freelancing, and Online Monetization. High-demand, 100% legitimate work.</div></div>
+        <div class="faq-item"><button class="faq-question">Is this actually genuine? <span class="faq-icon">+</span></button><div class="faq-answer">Yes. 2000+ students earning consistently. The results speak for themselves.</div></div>
+        <div class="faq-item"><button class="faq-question">How much time do I need? <span class="faq-icon">+</span></button><div class="faq-answer">1-2 hours daily is enough. Flexible around your job, studies, or family.</div></div>
+        <div class="faq-item"><button class="faq-question">When will I start earning? <span class="faq-icon">+</span></button><div class="faq-answer">Most students earn within 30 days. Steady income in 1-2 months.</div></div>
+        <div class="faq-item"><button class="faq-question">Do I need experience? <span class="faq-icon">+</span></button><div class="faq-answer">Zero. We start from scratch with step-by-step guidance.</div></div>
+        <div class="faq-item"><button class="faq-question">What support will I get? <span class="faq-icon">+</span></button><div class="faq-answer">Personal WhatsApp mentorship, weekly calls, and an active earner community.</div></div>
+        <div class="faq-item"><button class="faq-question">Is there a fee? <span class="faq-icon">+</span></button><div class="faq-answer">A small investment that covers everything. Zero hidden charges.</div></div>
+        <div class="faq-item"><button class="faq-question">Can I do this with my job? <span class="faq-icon">+</span></button><div class="faq-answer">Yes — built for busy people. Learn in your free time, grow at your own pace.</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container fade-in">
+      <h2>One Message. One Decision.<br/><em>One New Life.</em></h2>
+      <p>Financial freedom doesn't come from waiting. It starts with a single WhatsApp message.</p>
+      <div class="cta-box">
+        <p>📲 <strong>How to Begin</strong></p>
+        <p style="margin-top:8px;color:var(--text-muted);">Message me on WhatsApp with:</p>
+        <p style="margin-top:6px;"><strong>📝 Name · 🎂 Age · 💼 Profession</strong></p>
+        <div class="cta-number">📌 Save My Number: <strong>8483951147</strong></div>
+      </div>
+      <button class="btn-primary" onclick="openForm()">📲 Get Started Now</button>
+      <ul class="cta-checklist">
+        <li><span class="cta-check">✓</span> Complete program details</li>
+        <li><span class="cta-check">✓</span> Your personal earning roadmap</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- INSTAGRAM -->
+  <section class="insta-section">
+    <div class="container fade-in">
+      <div class="section-label" style="text-align:center;">Follow My Journey</div>
+      <h2 class="section-title" style="text-align:center;margin-bottom:8px;">Connect on <em>Instagram</em></h2>
+      <p style="color:var(--text-muted);text-align:center;margin-bottom:28px;">Behind the scenes, daily wins & inspiration</p>
+      <a class="insta-btn" href="https://www.instagram.com/Shaguftaofficial_" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+        @Shaguftaofficial_
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p><a href="#" onclick="document.getElementById('privacyModal').classList.remove('hidden');return false;">🔒 Privacy Policy</a></p>
+    <p style="margin-top:10px;">🌟 Empower with skills &nbsp;•&nbsp; 🌈 Support every vision &nbsp;•&nbsp; 🚀 Dreams to direction</p>
+    <p style="margin-top:10px;">❤️ With Strength &amp; Sincerity, Shagufta Parveen</p>
+    <p style="margin-top:10px;font-weight:600;color:var(--gold);">Powered by igaltamash</p>
+  </footer>
+
+  <!-- WA FLOAT -->
+  <a class="wa-float" href="#" onclick="openForm();return false;">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script>
+    function openForm() {
+      document.getElementById('leadModal').classList.remove('hidden');
+    }
+
+    // CAROUSEL
+    let cur = 0;
+    const total = 5;
+    const track = document.getElementById('carouselTrack');
+    const dotsEl = document.getElementById('carouselDots');
+    for (let i = 0; i < total; i++) {
+      const d = document.createElement('div');
+      d.className = 'carousel-dot' + (i === 0 ? ' active' : '');
+      d.onclick = () => goTo(i);
+      dotsEl.appendChild(d);
+    }
+    function goTo(n) {
+      cur = (n + total) % total;
+      track.style.transform = `translateX(-${cur * 100}%)`;
+      document.querySelectorAll('.carousel-dot').forEach((d, i) => d.classList.toggle('active', i === cur));
+    }
+    function moveCarousel(dir) { goTo(cur + dir); }
+    setInterval(() => moveCarousel(1), 4000);
+
+    // FAQ
+    document.querySelectorAll('.faq-question').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.parentElement;
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+        if (!isOpen) item.classList.add('open');
+      });
+    });
+
+    // WHATSAPP SUBMIT
+    function submitToWhatsApp() {
+      const name = document.getElementById('f-name').value.trim();
+      const phone = document.getElementById('f-phone').value.trim();
+      const age = document.getElementById('f-age').value.trim();
+      const gender = document.getElementById('f-gender').value;
+      const profession = document.getElementById('f-profession').value;
+      if (!name || !phone || !age || !gender || !profession) { alert('Please fill all fields'); return; }
+      const msg = encodeURIComponent(`Hi Shagufta! I want to join your program.\n\n📝 Name: ${name}\n📞 Phone: ${phone}\n🎂 Age: ${age}\n⚧ Gender: ${gender}\n💼 Profession: ${profession}`);
+      window.open(`https://wa.me/918483951147?text=${msg}`, '_blank');
+      document.getElementById('leadModal').classList.add('hidden');
+    }
+
+    // SCROLL ANIM
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-in').forEach(el => obs.observe(el));
+
+    // COUNTERS
+    const cObs = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          const target = parseInt(el.dataset.target);
+          const prefix = el.dataset.prefix || '';
+          const suffix = el.dataset.suffix || '+';
+          let count = 0;
+          const step = Math.ceil(target / 60);
+          const iv = setInterval(() => {
+            count = Math.min(count + step, target);
+            el.textContent = prefix + count + suffix;
+            if (count >= target) clearInterval(iv);
+          }, 24);
+          cObs.unobserve(el);
+        }
+      });
+    }, { threshold: 0.5 });
+    document.querySelectorAll('[data-target]').forEach(c => cObs.observe(c));
+  </script>
+</body>
+</html>
